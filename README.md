@@ -1,16 +1,41 @@
-# React + Vite
+# # ✅ 1. 기본 구현 기능
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [x]  Todo를 **추가하는 버튼 기능**을 만드세요.
+- [x]  Todo를 **삭제하는 버튼 기능**을 만드세요.
+- [x]  Todo의 완료 여부를 체크박스 **기능**을 만드세요.
+- [x]  Todo를 **map()을 이용해 리스트 형태로 화면에 렌더링**하세요.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# # 🔍 2. 검색 기능
 
-## React Compiler
+- [ ]  입력한 검색어를 기준으로 Todo를 **filter()로 필터링**하여, **검색된 Todo만 화면에 보이도록 구현**하세요.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# # 🕒 3. 날짜 & 시간 표시 기능
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [ ]  Todo 리스트 상단에 현재 날짜를 **YYYY-MM-DD 형식으로 표시하세요.**
+- [ ]  Todo 리스트 상단에 현재 시간을 **hh:mm:ss 형식으로 표시하세요.**
+- [ ]  시간은 **1초마다 자동으로 갱신되도록(useEffect + setInterval)** 만드세요.
+
+---
+
+# # 🌤 4. 날씨 표시 기능 (Open API 활용)
+
+- [ ]  투두리스트 상단에 **현재 날씨(온도 + 아이콘)**를 표시하세요.
+
+---
+
+# # ⏱ 5. 타이머 / 스톱워치 기능
+
+- [ ]  TodoList 각각의 **타이머 기능**을 만드세요.
+
+---
+
+# # ⭐ 8. 선택 심화 기능
+
+- [ ]  Todo에 마감 시간을 설정하고 **마감 1분 전이면 alert가 뜨는 기능**을 만드세요.
+- [ ]  json-server를 이용하여 Todo를 **파일에 저장하고 CRUD API로 연동**하세요.
+- [ ]  useState / useEffect / useRef를 활용해 **Custom Hook을 직접 1개 이상 만들기**
+    - (예: `useTimer`, `useCurrentTime`, `useFetchTodos`)
