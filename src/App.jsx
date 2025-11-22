@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import { TodoList } from '../components/todolist';
 import { TodoInput } from '../components/TodoInput';
+import { Clock } from '../components/Clock';
 
 
 function App() {
@@ -12,19 +13,21 @@ function App() {
   ]);
 
   return (
-    <>
-      <div className='container'>
+    <div className='container'>
+      <Clock />
+      <div>
         <h1>TODO LIST</h1>
+      </div>
+      <div className='listContainer'>
         <TodoInput todoList={todoList} setTodoList={setTodoList}/>
         <div className='line'/>
         <TodoList todoList={todoList} setTodoList={setTodoList}/>
       </div>
-    </>
+    </div>
   )
-
-
-
 }
+
+
 
 export default App
 
