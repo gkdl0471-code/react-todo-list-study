@@ -4,6 +4,7 @@ import { TodoList } from '../components/todolist';
 import { TodoInput } from '../components/TodoInput';
 import { Clock } from '../components/Clock';
 import { TodoSearch } from '../components/TodoSearch';
+import { Advice } from '../components/Advice';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <div className='clockbox'>
           <Clock />
         </div>
+        <Advice />
         <h1>TODO LIST</h1>
         <div className='inputBox'>
           <TodoInput todoList={todoList} setTodoList={setTodoList}/>
@@ -36,9 +38,6 @@ function App() {
     </div>
   )
 }
-
-
-
 
 
 

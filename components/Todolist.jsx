@@ -70,7 +70,7 @@ function Todo({todo, setTodoList}) {
                 className="changeBtn"
                 onClick={handleUpdate}
               >
-                수정완료
+                완료
               </button>
               <button
                 className="deleteBtn"
