@@ -46,9 +46,9 @@ export function Clock () {
 
   return (
     <>
-    <div className='dashboard-clock'>
+    <div className='dashboard'>
       <div className='clock-label'>📅 {formattedDate}</div>
-      <div className='weather-temp'>🌏 WEATHER : {weatherline}</div>
+      <div className='weather-temp'>인천 :{weatherline}</div>
       <div className='clock-time'>{formattedTime}</div>
     </div>
   

@@ -22,41 +22,49 @@ function Todo({todo, setTodoList}) {
   return (
     <>
       <li>
-        <input 
-        type="checkbox"/>
         {!isEditing && (
           <>
-          <span className="qqq">{todo.content}</span>
-            <div className="zzz">
-              <button
-                className="changeBtn"
-                onClick={() => {
-                  setInputValue(todo.content);
-                  setIsEditing(true);
-                }}
-              >
-                수정
-              </button>
-              <button
-                className="deleteBtn"
-                onClick={() => {
-                  setTodoList(prev => {
-                    return prev.filter(el => el.id !== todo.id);
-                  })
-                }}
-              >
-                삭제
-              </button>
-            </div>
+          <div className="left">
+            <input 
+            className="checkbox"
+            type="checkbox"/>
+            <span className="qqq">{todo.content}</span>
+          </div>
+          <div className="zzz">
+            <button
+              className="changeBtn"
+              onClick={() => {
+                setInputValue(todo.content);
+                setIsEditing(true);
+              }}
+            >
+              수정
+            </button>
+            <button
+              className="deleteBtn"
+              onClick={() => {
+                setTodoList(prev => {
+                  return prev.filter(el => el.id !== todo.id);
+                })
+              }}
+            >
+              삭제
+            </button>
+          </div>
           </>
         )}
         {isEditing && (
           <>
+          <div className="left">
             <input 
-              className="changeInput"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-            />
+            className="checkbox"
+            type="checkbox"/>
+              <input 
+                className="changeInput"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+              />
+          </div>
             <div className="zzz">
               <button
                 className="changeBtn"

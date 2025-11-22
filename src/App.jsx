@@ -19,13 +19,17 @@ function App() {
 
   return (
     <div className='container'>
-      <Clock />
-      <h1>TODO LIST</h1>
-      <div className='inputBox'>
-        <TodoInput todoList={todoList} setTodoList={setTodoList}/>
+      <div className='black'></div>
+      <div className='mainContainer'>
+        <div className='clockbox'>
+          <Clock />
+        </div>
+        <h1>TODO LIST</h1>
+        <div className='inputBox'>
+          <TodoInput todoList={todoList} setTodoList={setTodoList}/>
+        </div>
       </div>
       <div className='listContainer'>
-        <div className='line'/>
         <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue}/>
         <TodoList todoList={filterTodo} setTodoList={setTodoList}/>
       </div>
